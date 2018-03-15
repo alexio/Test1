@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import library.example.testlib.TestLib
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        library_text.setText("")
+        library_text.text = TestLib.testText
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
